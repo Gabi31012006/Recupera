@@ -38,9 +38,9 @@
             label7 = new Label();
             mt_cpf = new MaskedTextBox();
             tb_nome = new TextBox();
-            tb_data_inic = new TextBox();
+            tb_data_inicio = new TextBox();
             cb_profissao = new ComboBox();
-            mt_data_nasc = new MaskedTextBox();
+            mt_nasciment = new MaskedTextBox();
             cb_sexo = new ComboBox();
             bt_verificar = new Button();
             SuspendLayout();
@@ -139,13 +139,13 @@
             tb_nome.Size = new Size(100, 23);
             tb_nome.TabIndex = 8;
             // 
-            // tb_data_inic
+            // tb_data_inicio
             // 
-            tb_data_inic.BackColor = Color.Pink;
-            tb_data_inic.Location = new Point(383, 270);
-            tb_data_inic.Name = "tb_data_inic";
-            tb_data_inic.Size = new Size(173, 23);
-            tb_data_inic.TabIndex = 11;
+            tb_data_inicio.BackColor = Color.Pink;
+            tb_data_inicio.Location = new Point(383, 270);
+            tb_data_inicio.Name = "tb_data_inicio";
+            tb_data_inicio.Size = new Size(173, 23);
+            tb_data_inicio.TabIndex = 11;
             // 
             // cb_profissao
             // 
@@ -157,14 +157,14 @@
             cb_profissao.Size = new Size(121, 23);
             cb_profissao.TabIndex = 12;
             // 
-            // mt_data_nasc
+            // mt_nasciment
             // 
-            mt_data_nasc.BackColor = Color.Pink;
-            mt_data_nasc.Location = new Point(227, 146);
-            mt_data_nasc.Mask = "00/00/0000";
-            mt_data_nasc.Name = "mt_data_nasc";
-            mt_data_nasc.Size = new Size(100, 23);
-            mt_data_nasc.TabIndex = 13;
+            mt_nasciment.BackColor = Color.Pink;
+            mt_nasciment.Location = new Point(227, 146);
+            mt_nasciment.Mask = "00/00/0000";
+            mt_nasciment.Name = "mt_nasciment";
+            mt_nasciment.Size = new Size(100, 23);
+            mt_nasciment.TabIndex = 13;
             // 
             // cb_sexo
             // 
@@ -186,6 +186,7 @@
             bt_verificar.TabIndex = 15;
             bt_verificar.Text = "Verificar";
             bt_verificar.UseVisualStyleBackColor = false;
+            bt_verificar.Click += bt_verificar_Click;
             // 
             // Form1
             // 
@@ -195,9 +196,9 @@
             ClientSize = new Size(784, 378);
             Controls.Add(bt_verificar);
             Controls.Add(cb_sexo);
-            Controls.Add(mt_data_nasc);
+            Controls.Add(mt_nasciment);
             Controls.Add(cb_profissao);
-            Controls.Add(tb_data_inic);
+            Controls.Add(tb_data_inicio);
             Controls.Add(tb_nome);
             Controls.Add(mt_cpf);
             Controls.Add(label7);
@@ -224,9 +225,9 @@
         private Label label7;
         private MaskedTextBox mt_cpf;
         private TextBox tb_nome;
-        private TextBox tb_data_inic;
+        private TextBox tb_data_inicio;
         private ComboBox cb_profissao;
-        private MaskedTextBox mt_data_nasc;
+        private MaskedTextBox mt_nasciment;
         private ComboBox cb_sexo;
         private Button bt_verificar;
     }
